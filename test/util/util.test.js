@@ -37,4 +37,10 @@ describe('util', () => {
     assert.equal(Color(util.numberToColor(0xff05ff)).g, Color('#ff05ff').g)
     assert.equal(Color(util.numberToColor(0xff05ff)).b, Color('#ff05ff').b)
   })
+
+  it('pluralize', () => {
+    assert.equal(util.pluralize(0, 'item'), 'items')
+    assert.equal(util.pluralize(1, 'item'), 'item')
+    assert.equal(util.pluralize(2, 'item'), 'items')
+  })
 })

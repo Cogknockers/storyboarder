@@ -107,7 +107,7 @@ let shuffle = (arr) => {
 
 let compareNumbers = (a, b) => a - b
 
-const pluralize = (number, string) => number > 1 ? string + 's' : string
+const pluralize = (number, string) => number === 1 ? string : string + 's'
 
 const sample = list => list[(Math.random() * list.length)|0]
 
